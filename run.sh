@@ -8,7 +8,7 @@ user="$(bashio::config 'proxy_user')"
 password="$(bashio::config 'proxy_password')"
 
 proxy="${scheme}://${host}:${port}"
-[ -n "$user" ] && auth="${proxy}#${user}"
-[ -n "$password" -a -n "$user" ] && auth="${proxy}:${password}"
+[ -n "$user" ] && proxy="${proxy}#${user}"
+[ -n "$password" -a -n "$user" ] && proxy="${proxy}:${password}"
 
 pproxy -l http://:80 -vv -r "${proxy}"
