@@ -24,4 +24,4 @@ schema:
   proxy_host: str
   proxy_port: port
   proxy_login: "str?"
-  proxy_password: "password?"
+  proxy_password: "str?"
