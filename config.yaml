@@ -1,5 +1,5 @@
 name: pproxy server
-version: 0.0.10
+version: 0.0.11
 slug: pproxy
 description: pproxy server 
 url: https://github.com/IATkachenko/ha-addon-pproxy
@@ -7,6 +7,7 @@ arch:
   - aarch64
   - amd64
 init: false
+stdin: true
 map:
   - addon_config:rw
 ports:
