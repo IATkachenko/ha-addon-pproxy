@@ -1,5 +1,5 @@
 name: pproxy server
-version: 0.0.8
+version: 0.0.9
 slug: pproxy
 description: pproxy server 
 url: https://github.com/IATkachenko/ha-addon-pproxy
