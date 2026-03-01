@@ -1,5 +1,5 @@
 name: pproxy server
-version: 0.0.5
+version: 0.0.6
 slug: pproxy
 description: pproxy server 
 url: https://github.com/IATkachenko/ha-addon-pproxy
@@ -9,8 +9,6 @@ arch:
 init: false
 map:
   - addon_config:rw
-  - share:rw
-video: true
 ports:
   80/tcp: 8888
 ports_description:
@@ -19,11 +17,11 @@ options:
   proxy_scheme: null
   proxy_host: null
   proxy_port: null
-  proxy_login: null
-  proxy_password: null
+  proxy_login:
+  proxy_password:
 schema:
   proxy_scheme: str
   proxy_host: str
   proxy_port: port
-  proxy_login: str?
-  proxy_password: password?
+  proxy_login: "str?"
+  proxy_password: "password?"
