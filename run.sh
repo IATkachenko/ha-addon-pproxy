@@ -11,4 +11,4 @@ proxy="${scheme}://${host}:${port}"
 [ -n "$user" ] && auth="${proxy}#${user}"
 [ -n "$password" -a -n "$user" ] && auth="${proxy}:${password}"
 
-python3 -m pproxy -l http://:80 -vv -r "${proxy}"
+pproxy -l http://:80 -vv -r "${proxy}"
